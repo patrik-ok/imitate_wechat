@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<ExpandableListView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:divider="@color/transparent"
+	    android:id="@+id/contacts_list"
+	    android:scrollbars="none"/>
+	
+	<com.wechat.ui.widget.AssortView 
+	    android:id="@+id/contacts_assort"
+	    android:layout_width="25dp"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentRight="true"
+	    android:clickable="true"
+	    android:background="@drawable/assort_contacts_bg"/>
+</RelativeLayout>

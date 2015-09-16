@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wechat.ui.widget.CustomerScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" 
+    android:background="@color/mian_bg">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/find_friend"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dip" >
+
+            <ImageView 
+                style="@style/option_item_img"
+                android:id="@+id/find_friend_img"
+                android:src="@drawable/find_friend"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_descr"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/find_friend"
+                android:id="@+id/find_friend_text"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/find_friend_img"
+                android:textSize="@dimen/text_size_16"/>
+
+            <ImageView 
+                style="@style/option_item_img"
+                android:src="@drawable/find_friend"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/find_frined_recent"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/content_descr"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/find_scan"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dp">
+
+            <ImageView 
+                style="@style/option_item_img"
+                android:id="@+id/find_scan_img"
+                android:src="@drawable/find_scan"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_descr"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/find_scan"
+                android:id="@+id/find_scan_text"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/find_scan_img"
+                android:textSize="@dimen/text_size_16"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+  			android:paddingLeft="10dp"
+  			android:paddingRight="10dp"
+            android:background="@color/white"
+            android:src="@color/mian_bg"
+            android:contentDescription="@string/content_descr"/>
+        
+        <RelativeLayout
+            android:id="@+id/find_shake"
+            style="@style/option_item_rl">
+
+            <ImageView 
+                style="@style/option_item_img"
+                android:id="@+id/find_shake_img"
+                android:src="@drawable/find_shake"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_descr"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/find_shake"
+                android:id="@+id/find_shake_text"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/find_shake_img"
+                android:textSize="@dimen/text_size_16"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/find_vicinity"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dp">
+
+            <ImageView 
+                style="@style/option_item_img"
+                android:id="@+id/find_vicinity_img"
+                android:src="@drawable/find_fujin"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_descr"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/find_vicinity"
+                android:id="@+id/find_vicinity_text"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/find_vicinity_img"
+                android:textSize="@dimen/text_size_16"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+  			android:paddingLeft="10dp"
+  			android:paddingRight="10dp"
+            android:background="@color/white"
+            android:src="@color/mian_bg"
+            android:contentDescription="@string/content_descr"/>
+        
+        <RelativeLayout
+            android:id="@+id/find_drift_bottles"
+            style="@style/option_item_rl">
+
+            <ImageView 
+                style="@style/option_item_img"
+                android:id="@+id/find_drift_bottles_img"
+                android:src="@drawable/find_pingzi"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_descr"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/find_drift_bottles"
+                android:id="@+id/find_drift_bottles_text"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/find_drift_bottles_img"
+                android:textSize="@dimen/text_size_16"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/find_shop"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dp">
+
+            <ImageView 
+                style="@style/option_item_img"
+                android:id="@+id/find_shop_img"
+                android:src="@drawable/find_shop"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_descr"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/find_shop"
+                android:id="@+id/find_shop_text"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/find_shop_img"
+                android:textSize="@dimen/text_size_16"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+  			android:paddingLeft="10dp"
+  			android:paddingRight="10dp"
+            android:background="@color/white"
+            android:src="@color/mian_bg"
+            android:contentDescription="@string/content_descr"/>
+        
+        <RelativeLayout
+            android:id="@+id/find_game"
+            style="@style/option_item_rl">
+
+            <ImageView 
+                style="@style/option_item_img"
+                android:id="@+id/find_game_img"
+                android:src="@drawable/find_game"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_descr"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/find_game"
+                android:id="@+id/find_game_text"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/find_game_img"
+                android:textSize="@dimen/text_size_16"/>
+        </RelativeLayout>
+
+        
+    </LinearLayout>
+
+</com.wechat.ui.widget.CustomerScrollView>

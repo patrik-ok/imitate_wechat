@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wechat.ui.widget.CustomerScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" 
+    android:background="@color/mian_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/mine_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_background"
+            android:clickable="true"
+            android:layout_marginTop="20dip"
+			android:paddingTop="5dp"
+			android:paddingBottom="5dp"
+			android:paddingLeft="10dp">
+
+            <ImageView 
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:id="@+id/mine_info_img"
+                android:src="@drawable/user_head_eg"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:contentDescription="@string/content_descr"/>
+
+            <ImageView 
+				android:layout_width="18dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/user_code"
+                android:layout_marginRight="20dp"
+                android:id="@+id/mine_info_code"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/content_descr"
+                android:layout_centerVertical="true"/>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/mine_info_img"
+                android:layout_toLeftOf="@id/mine_info_code"
+                android:layout_centerVertical="true"
+	            android:layout_marginLeft="5dp">
+                
+                <TextView
+	                style="@style/option_item_text_parent"
+	                android:text="@string/find_friend"
+	                android:id="@+id/mine_info_name"
+	                android:textColor="@color/black"
+	                android:textSize="@dimen/text_size_16"/>
+	            
+	            <TextView
+	                style="@style/option_item_text_parent"
+	                android:text="@string/find_friend"
+	                android:id="@+id/mine_info_num"
+	                android:textColor="@color/gray"
+	                android:textSize="@dimen/text_size_14"
+	                android:layout_marginTop="5dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_photo"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dp">
+
+            <ImageView 
+                style="@style/option_item_img"
+                android:id="@+id/mine_photo_img"
+                android:src="@drawable/mine_picture"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_descr"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/mine_photo"
+                android:id="@+id/mine_photo_text"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/mine_photo_img"
+                android:textSize="@dimen/text_size_16"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+  			android:paddingLeft="10dp"
+  			android:paddingRight="10dp"
+            android:background="@color/white"
+            android:src="@color/mian_bg"
+            android:contentDescription="@string/content_descr"/>
+        
+        <RelativeLayout
+            android:id="@+id/mine_collect"
+            style="@style/option_item_rl">
+
+            <ImageView 
+                style="@style/option_item_img"
+                android:id="@+id/mine_collect_img"
+                android:src="@drawable/mine_collect"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_descr"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/mine_collect"
+                android:id="@+id/mine_collect_text"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/mine_collect_img"
+                android:textSize="@dimen/text_size_16"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/mine_wallet"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dp">
+
+            <ImageView 
+                style="@style/option_item_img"
+                android:id="@+id/mine_wallet_img"
+                android:src="@drawable/mine_wallet"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_descr"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/mine_wallet"
+                android:id="@+id/mine_wallet_text"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/mine_wallet_img"
+                android:textSize="@dimen/text_size_16"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/mine_face"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dp">
+
+            <ImageView 
+                style="@style/option_item_img"
+                android:id="@+id/mine_face_img"
+                android:src="@drawable/mine_face"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_descr"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/mine_face"
+                android:id="@+id/mine_face_text"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/mine_face_img"
+                android:textSize="@dimen/text_size_16"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/mine_setting"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dp">
+
+            <ImageView 
+                style="@style/option_item_img"
+                android:id="@+id/mine_setting_img"
+                android:src="@drawable/mine_setting"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_descr"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/mine_setting"
+                android:id="@+id/mine_setting_text"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/mine_setting_img"
+                android:textSize="@dimen/text_size_16"/>
+        </RelativeLayout>
+      
+
+        
+    </LinearLayout>
+
+</com.wechat.ui.widget.CustomerScrollView>
