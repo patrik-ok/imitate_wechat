@@ -55,7 +55,11 @@ public class BaseFragment extends Fragment implements OnClickListener{
 			return holdView;
         }
     }
-
+    
+	public boolean onBackPressed() {
+		return false;
+	}
+	
     protected void hideWaitDialog() {
 //        FragmentActivity activity = getActivity();
 //        if (activity instanceof DialogControl) {

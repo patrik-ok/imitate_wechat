@@ -142,7 +142,6 @@ public class StringUtil {
         String res = "";
         if (isEmpty(sdate))
             return "";
-
         
         String currentData = StringUtil.getDataTime("MM-dd");
         int currentDay = toInt(currentData.substring(3));

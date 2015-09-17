@@ -23,4 +23,6 @@
     <string name="mine_wallet">钱包</string>
     <string name="mine_face">表情</string>
     <string name="mine_setting">设置</string>
+    
+    <string name="title_chat">聊天</string>
 </resources>

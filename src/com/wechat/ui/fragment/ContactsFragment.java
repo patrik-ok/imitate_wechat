@@ -15,11 +15,11 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnGroupClickListener;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.wechat.app.R;
@@ -69,7 +69,6 @@ public class ContactsFragment extends BaseFragment implements OnTouchAssortListe
 		mInfoData = new HashMap<Integer, ArrayList<ContantsListItem>>();
 		
 		mAssortView.setOnTouchAssortListener(this);
-		contacts.setAdapter(contactsAdapter);
 		contacts.setGroupIndicator(null);
 
 		contacts.setOnGroupClickListener(new OnGroupClickListener() {
@@ -126,14 +125,15 @@ public class ContactsFragment extends BaseFragment implements OnTouchAssortListe
 		}
 		
 		footer = new TextView(getActivity());
-		footer.setLayoutParams(new LinearLayout.LayoutParams(
-				LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+		footer.setLayoutParams(new AbsListView.LayoutParams(
+				AbsListView.LayoutParams.MATCH_PARENT, AbsListView.LayoutParams.WRAP_CONTENT));
 		footer.setPadding(0, 40, 0, 40);
 		footer.setGravity(Gravity.CENTER);
 		footer.setTextSize(16);
 		footer.setTextColor(getActivity().getResources().getColor(R.color.contacts_group_text));
 		contacts.addFooterView(footer);
-		
+
+		contacts.setAdapter(contactsAdapter);
 		refreshData();
 		
 		super.initData();

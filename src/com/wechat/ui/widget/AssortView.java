@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -47,7 +48,7 @@ public class AssortView extends View{
 		for (int i = 0, length = assort.length; i < length; i++) {
 
 			paint.setAntiAlias(true);
-			paint.setTextSize(40);
+			paint.setTextSize(interval);
 			paint.setColor(getContext().getResources().getColor(R.color.contacts_assort_text));
 			
 			float xPos = width / 2 - paint.measureText(assort[i]) / 2;
