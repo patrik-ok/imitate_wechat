@@ -84,4 +84,9 @@
         <item name="android:dropDownSelector">#343434</item>
         <item name="android:popupBackground">#343434</item>
     </style>
+    
+    <style name="chatEditStyle" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/chat_edit_bg_selector</item>
+        <item name="android:textSize">16sp</item>
+    </style>
 </resources>

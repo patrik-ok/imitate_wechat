@@ -37,4 +37,8 @@
     <color name="contacts_group_text">#969696</color>
     <color name="contacts_child_text">#3c3b3b</color>
     <color name="recent_grey_text">#b0b0b0</color>
+    
+    <!-- chat view -->
+    <color name="gray_normal">#666667</color>
+    <color name="chat_bg">#ebebeb</color>
 </resources>

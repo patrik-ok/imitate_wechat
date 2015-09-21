@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.wechat.app.R;
@@ -20,10 +22,29 @@ public class BackActivity extends BaseActivity {
 
 	protected WeakReference<Fragment> mFragment;
 	protected int mPageValue = -1;
+	private int pageMenu = -1;
 
 	@Override
 	protected int getLayoutId() {
 		return R.layout.activity_simple_fragment;
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		
+		if(pageMenu > 0)
+			getMenuInflater().inflate(pageMenu, menu);
+		
+		return super.onCreateOptionsMenu(menu);
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		
+		if(mFragment.get() != null)
+			mFragment.get().onOptionsItemSelected(item);
+		
+		return super.onOptionsItemSelected(item);
 	}
 
 	@Override
@@ -40,12 +61,14 @@ public class BackActivity extends BaseActivity {
 			throw new RuntimeException(
 					"you must provide a page info to display");
 		}
+		
 		BackPage page = BackPage.getPageByValue(pageValue);
 		if (page == null) {
 			throw new IllegalArgumentException("can not find page by value:"
 					+ pageValue);
 		}
 
+		pageMenu = page.getMenu();
 		setActionBarTitle(page.getTitle());
 
 		try {

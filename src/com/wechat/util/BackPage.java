@@ -1,23 +1,34 @@
 package com.wechat.util;
 
 import com.wechat.app.R;
+import com.wechat.ui.fragment.ChatFragment;
 
 
 public enum BackPage {
 	
-	SETTING(1, R.string.title_chat, BackPage.class);
+	CHAT(1, R.string.title_chat, ChatFragment.class, R.menu.chat_menu);
 	
     private int title;
     private Class<?> clz;
     private int value;
+    private int menu;
 
-    private BackPage(int value, int title, Class<?> clz) {
+    private BackPage(int value, int title, Class<?> clz, int menu) {
         this.value = value;
         this.title = title;
         this.clz = clz;
+        this.menu = menu;
     }
     
-    public int getTitle() {
+    public int getMenu() {
+		return menu;
+	}
+
+	public void setMenu(int menu) {
+		this.menu = menu;
+	}
+
+	public int getTitle() {
         return title;
     }
 

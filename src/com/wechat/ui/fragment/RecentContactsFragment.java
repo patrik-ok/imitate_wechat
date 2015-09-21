@@ -19,7 +19,9 @@ import android.widget.TextView;
 
 import com.wechat.app.R;
 import com.wechat.ui.bean.ContantsListItem;
+import com.wechat.util.BackPage;
 import com.wechat.util.StringUtil;
+import com.wechat.util.UiHelper;
 
 public class RecentContactsFragment extends BaseFragment {
 
@@ -103,6 +105,8 @@ public class RecentContactsFragment extends BaseFragment {
 		int position = Integer.valueOf(v.getContentDescription().toString());
 		
 		Log.d("mmsg", " click position -> " + position);
+		
+		UiHelper.showSimpleBack(getActivity(), BackPage.CHAT);
 	}
 	
 	private BaseAdapter mAdapter = new BaseAdapter() {
