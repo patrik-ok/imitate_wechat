@@ -14,6 +14,8 @@ import android.content.pm.PackageManager.NameNotFoundException;
  * 
  */
 public class AppContext extends Application {
+
+	public static final String CONFIG_SOFTWARE_HIGHT = "keyboard_hight";
 	
 	private static AppContext instance;
 

@@ -35,4 +35,8 @@
     <string name="attach_file">文件</string>
     <string name="attach_voice_call">语音电话</string>
     <string name="attach_video_call">视频通话</string>
+    
+    <string name="login_problem">登录遇到问题？</string>
+    <string name="more">更多</string>
+    <string name="login">登录</string>
 </resources>
