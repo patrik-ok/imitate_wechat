@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    
+	    <ImageView 
+	        android:id="@+id/login_user_face"
+	        android:layout_height="80dp"
+	        android:layout_width="80dp"
+	        android:src="@drawable/user_head_eg"
+	        android:layout_marginTop="50dp"
+	        android:layout_gravity="center_horizontal"
+	        />
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:textColor="@color/black"
+	        android:text="496662960"
+	        android:id="@+id/login_user_name"
+	        android:layout_marginTop="10dp"
+	        android:layout_gravity="center_horizontal"/>
+	    
+	    <com.wechat.ui.widget.PswEditText 
+	        android:id="@+id/login_edit_pwd"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        style="@style/chatEditStyle"
+	        android:drawablePadding="10dp"
+	        android:layout_marginTop="30dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:inputType="textPassword"
+	        android:textSize="14sp"/>
+	    
+	    <Button 
+	        android:id="@+id/login_btn_ok"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+	        android:layout_marginTop="20dp"
+	        android:textColor="@color/white"
+	        android:gravity="center"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/login"
+	        android:background="@drawable/login_btn_bg_selector"/>
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/black"
+	        android:id="@+id/login_problem"
+	        android:layout_marginTop="10dp"
+	        android:text="@string/login_problem"
+	        android:layout_gravity="center_horizontal"/>
+	</LinearLayout>
+</LinearLayout>
