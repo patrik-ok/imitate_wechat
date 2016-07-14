@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shzt="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/title_chat"
+        android:title="@string/title_chat_icon"
+		android:icon="@drawable/chat_title_other"
+        android:visible="true"
+        shzt:showAsAction="always"/>
+</menu>
